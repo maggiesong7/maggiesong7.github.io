@@ -29,9 +29,6 @@ a:active {
   color: #555;
 }
 
-.about-text p {
-  /*font-size: 1.2rem;*/
-}
 
 .about-headshot-mobile {
   max-width: 60%;
@@ -39,19 +36,9 @@ a:active {
 
 .title-name {
   font-family: 'Alegreya SC', serif; 
-  font-size: 2.1em;
+  font-size: 2.0em;
   line-height: 90%;
   font-weight:500;
-}
-.title-email {
-  font-size: 1.2rem;
-}
-.title-small{
-  font-size: 1.1rem;
-}
-
-.info-text {
-  /*background-color: #f2f2f2;*/
 }
 
 
@@ -95,17 +82,6 @@ a:active {
   font-weight: 200;
 }
 
-.expandable-list ul {
-  list-style-type:none;
-  margin-left: 1em;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.expandable-list .extra-item {
-  display: none;
-}
-
 .news-date {
   /* color: #E03838; */
   display: inline-block;
@@ -125,6 +101,11 @@ a:active {
   color: #E03838;
 }
 
+.expandable-list {
+  background-color: #f9f9f9; /* 可选：为"News"部分添加背景色以突出显示 */
+  padding: 10px; /* 可选：添加内边距来使内容更具可读性 */
+}
+
 
 /* Content summaries */
 
@@ -132,7 +113,8 @@ a:active {
   margin-bottom: 0px;
   border-bottom-style: solid;
   border-width: 2px;
-  text-align: right;
+  /* text-align: right; */
+  text-align: left
 }
 
 .content-header col {
@@ -234,7 +216,6 @@ a:active {
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
-  align: center;
 }
 
 .authors-list {
@@ -242,7 +223,6 @@ a:active {
   margin-bottom: 0px;
   font-size: 1.2em;
   text-align: center;
-  align: center;
 }
 
 .plain-link {
@@ -255,7 +235,6 @@ a:active {
   margin-bottom: 0px;
   font-size: 1.2em;
   text-align: center;
-  align: center;
   color: #E03838;
 }
 
@@ -264,7 +243,6 @@ a:active {
   margin-bottom: 0px;
   font-size: 1.2em;
   text-align: center;
-  align: center;
   color: #E03838;
   font-weight: bolder;
 }
