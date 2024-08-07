@@ -1,0 +1,10 @@
+@article{li2023ems,
+  title={EMS: 3D Eyebrow Modeling from Single-view Images},
+  author={Li, Chenghong and Jin, Leyang and Zheng, Yujian and Yu, Yizhou and Han, Xiaoguang},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={42},
+  number={6},
+  pages={1--19},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}

@@ -1,0 +1,7 @@
+@inproceedings{yu2022pvserf,
+  title={PVSeRF: joint pixel-, voxel-and surface-aligned radiance field for single-image novel view synthesis},
+  author={Yu, Xianggang and Tang, Jiapeng and Qin, Yipeng and Li, Chenghong and Han, Xiaoguang and Bao, Linchao and Cui, Shuguang},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={1572--1583},
+  year={2022}
+}

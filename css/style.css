@@ -139,22 +139,47 @@ a:active {
 .summary-title {
   font-family: 'Alegreya', serif;
   /* font-variant: small-caps; */
-  font-size: 1.3rem;
+  font-size: 1.15em;
   font-weight:500;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
   margin-top: 0px;
   padding-top: 0px;
 }
 .summary-authors{
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 0.95rem;
 }
 
 .summary-publication-status {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   color: #E03838;
 }
+
+.summary-services {
+  font-size: 1.2em;
+  display: inline-block;
+  font-family: 'Alegreya', serif;
+}
+
+.service-entry {
+  display: inline-block;
+  font-size: 0.95em;
+}
+
+
+.summary-teaching {
+  font-size: 1.2em;
+  display: inline-block;
+  font-family: 'Alegreya', serif;
+}
+
+.teaching-entry {
+  display: inline-block;
+  font-size: 0.95em;
+}
+
 
 .summary-extras {
   padding-left: 5px;
@@ -162,11 +187,10 @@ a:active {
   font-weight: bolder;
   background: #E0383833;
 }
-.summary-extras:hover {
-  text-decoration: none;
-}
 
-.summary-extras-btn {
+
+
+.summary-extras-award {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: bolder;
@@ -184,9 +208,9 @@ a:active {
   margin-bottom: 2px;
 }
 .summary-image {
-  /*border: 1px solid #ddd;*/
-  /*border-radius: 4px;*/
-  padding: 5px;
+  /* border: 1px solid #ddd;
+  border-radius: 4px; */
+  padding: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -249,6 +273,7 @@ a:active {
 .hover {
   text-decoration: none;
 }
+
 
 .big-teaser-image {
   padding: 5px;
