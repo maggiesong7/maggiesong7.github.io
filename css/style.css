@@ -4,9 +4,13 @@ html {
 }
 
 body {
-  /*font-family: 'Lato', sans-serif !important;*/
-  font-family: 'Lora', serif !important;
+  /* font-family: 'Lato', sans-serif !important; */
+  /* font-family: 'Lora', serif !important; */
+  font-family: 'Merriweather',serif !important;
+  
 }
+
+
 
 /* Link colors */
 a:link {
@@ -41,6 +45,10 @@ a:active {
   font-weight:500;
 }
 
+.about-lch{
+  font-family: 'Merriweather',serif !important;
+  font-size: 1.05em;
+}
 
 .link-button {
   font-family: 'Alegreya', serif;
@@ -76,6 +84,7 @@ a:active {
 
 /* Expand/collapsible news entries */
 
+
 .news-title {
   font-family: 'Alegreya', serif;
   font-size: 1.3rem;
@@ -91,7 +100,7 @@ a:active {
 }
 
 .news-entry {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .news-expand-button {
@@ -148,7 +157,7 @@ a:active {
 .summary-authors{
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .summary-publication-status {
@@ -165,7 +174,7 @@ a:active {
 
 .service-entry {
   display: inline-block;
-  font-size: 0.95em;
+  font-size: 1.0em;
 }
 
 
@@ -177,7 +186,7 @@ a:active {
 
 .teaching-entry {
   display: inline-block;
-  font-size: 0.95em;
+  font-size: 1.0em;
 }
 
 
@@ -203,7 +212,7 @@ a:active {
 }
 
 .summary-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -242,10 +251,16 @@ a:active {
   text-align: center;
 }
 
+.author-lch {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+
 .authors-list {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-align: center;
 }
 
