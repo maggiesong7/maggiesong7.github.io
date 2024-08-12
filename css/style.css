@@ -353,3 +353,13 @@ pre {
   width: 100%;
   height: auto;
 }
+
+
+.bibtex-code {
+  font-family: 'Courier New';
+  font-size: 14px;
+  line-height: 1.5;
+  /* color: #333; */
+  
+}
+
