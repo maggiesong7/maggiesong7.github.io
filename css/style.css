@@ -11,7 +11,6 @@ body {
 }
 
 
-
 /* Link colors */
 a:link {
     color: #E03838;
@@ -112,35 +111,6 @@ a:active {
 }
 
 
-/* Content summaries */
-
-.content-header {
-  margin-bottom: 0px;
-  border-bottom-style: solid;
-  border-width: 2px;
-  /* text-align: right; */
-  text-align: left
-}
-
-.content-header col {
-  padding-right: 0px;
-}
-
-.content-header p {
-  font-weight: bold;
-  font-size: 2.0rem;
-  margin-bottom: 0px;
-  margin-right: 0px;
-}
-
-.content-header-linebreak {
-  height: 30px;
-  margin-bottom: 15px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .summary-title {
   font-family: 'Alegreya', serif;
   /* font-variant: small-caps; */
@@ -155,6 +125,7 @@ a:active {
   margin-bottom: 0px;
   font-size: 0.95rem;
 }
+
 
 .summary-publication-status {
   margin-top: 0px;
@@ -185,14 +156,12 @@ a:active {
   font-size: 1.0em;
 }
 
-
 .summary-extras {
   padding-left: 5px;
   padding-right: 5px;
   font-weight: bolder;
   background: #E0383833;
 }
-
 
 
 .summary-extras-award {
@@ -212,6 +181,7 @@ a:active {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 .summary-image {
   /* border: 1px solid #ddd;
   border-radius: 4px; */
@@ -221,12 +191,14 @@ a:active {
   margin-right: auto;
 }
 
+/* for paper and code button */
 .badge-button {
   font-size: 0.8rem;
   background: #E0383833;
   line-height: 225%;
   margin-right: 0.25rem;
 }
+
 .badge-button:hover {
   text-decoration: none;
 }
@@ -239,18 +211,45 @@ a:active {
   text-decoration: none;
 }
 
-.full-title {
-  font-family: 'Alegreya', serif;
-  font-size: 3em;
-  margin-top: 0px;
+
+
+/* For project page */
+
+/* Content summaries */
+.content-header {
   margin-bottom: 0px;
-  text-align: center;
+  border-bottom-style: solid;
+  border-width: 2px;
+  /* text-align: right; */
+  /* text-align: center; */
+  text-align: left
 }
 
-.author-lch {
-  margin-top: 0px;
+.content-header col {
+  padding-right: 0px;
+}
+
+.content-header p {
+  font-weight: bold;
+  font-size: 2.0rem;
   margin-bottom: 0px;
-  font-weight: bolder;
+  margin-right: 0px;
+}
+
+.content-header-linebreak {
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.full-title {
+  font-family: 'Alegreya', serif;
+  font-size: 2.5em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .authors-list {
@@ -260,9 +259,24 @@ a:active {
   text-align: center;
 }
 
+.schools-list {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-size: 1.05em;
+  text-align: center;
+}
+
+
 .plain-link {
   color: #000000 !important;
   text-decoration: underline !important;
+  font-size: 0.8em;
+}
+
+.plain-wo-link{
+  color: #000000 !important;
+  /* text-decoration: underline !important; */
+  font-size: 0.8em;
 }
 
 .publication-status {
@@ -295,6 +309,18 @@ a:active {
 	max-width: auto;
 }
 
+.image-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap; /* 当图片超出容器时换行 */
+  justify-content: space-between; /* 图片两边对齐 */
+}
+.image-container img {
+  width: 100%; /* 图片最大宽度为容器宽度 */
+  height: auto; /* 根据宽度调整高度，保持长宽比 */
+  margin-bottom: 10px; /* 图片间的垂直间距 */
+}
+
+
 .abstract {
   text-align: left;
   padding: 10px;
@@ -309,4 +335,21 @@ a:active {
 }
 .selected-figure-caption {
   max-width: 600px;
+}
+
+.bibtex {
+  display: flex;
+  /* justify-content: center; */
+  text-align: justify;
+}
+
+pre {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left; /* 文本左对齐 */
+  width: 100%;
+  height: auto;
 }
