@@ -1,0 +1,8 @@
+@inproceedings{li2024incremental,
+  title={Incremental 3D Reconstruction through a Hybrid Explicit-and-Implicit Representation},
+  author={Li, Feifei and Hu, Panwen and Song, Qi and Huang, Rui},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={15121--15127},
+  year={2024},
+  organization={IEEE}
+}
