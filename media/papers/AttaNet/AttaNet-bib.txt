@@ -1,0 +1,7 @@
+@inproceedings{Song2021AttaNetAN,
+  title={AttaNet: Attention-Augmented Network for Fast and Accurate Scene Parsing},
+  author={Qi Song and Kangfu Mei and Rui Huang},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2021},
+  url={https://api.semanticscholar.org/CorpusID:232170304}
+}
