@@ -1,0 +1,9 @@
+@article{li2023front,
+  title={From front to rear: 3d semantic scene completion through planar convolution and attention-based network},
+  author={Li, Jie and Song, Qi and Yan, Xiaohu and Chen, Yongquan and Huang, Rui},
+  journal={IEEE Transactions on Multimedia},
+  volume={25},
+  pages={8294--8307},
+  year={2023},
+  publisher={IEEE}
+}
