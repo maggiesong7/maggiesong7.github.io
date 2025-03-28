@@ -1,6 +1,0 @@
-@article{luo2024garverselod,
-        title={GarVerseLOD: High-Fidelity 3D Garment Reconstruction from a Single In-the-Wild Image using a Dataset with Levels of Details},
-        author={Luo, Zhongjin and Liu, Haolin and Li, Chenghong and Du, Wanghao and Jin, Zirong and Sun, Wanhu and Nie, Yinyu and Chen, Weikai and Han, Xiaoguang},
-        journal={ACM Transactions on Graphics (TOG)},
-        year={2024}
-      }
