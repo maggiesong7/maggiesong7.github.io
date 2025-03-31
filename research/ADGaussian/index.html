@@ -139,7 +139,7 @@
     </div>
   </div>
 
-  <!-- <div class="row content-header">
+  <div class="row content-header">
     <div class="col pr-0">
     <p>Abstract</p>
     </div>
@@ -159,33 +159,7 @@
         our ADGaussian achieves state-of-the-art performance and exhibits superior zero-shot generalization capabilities in novel-view shifting.
       </p>
     </div>
-  </div> -->
-  
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-            We present a novel approach, termed ADGaussian, for generalizable street scene reconstruction. 
-            The proposed method enables high-quality rendering from single-view input. Unlike prior Gaussian 
-            Splatting methods that primarily focus on geometry refinement, we emphasize the importance of 
-            joint optimization of image and depth features for accurate Gaussian prediction. To this end, we first 
-            incorporate sparse LiDAR depth as an additional input modality, formulating the Gaussian prediction 
-            process as a joint learning framework of visual information and geometric clue. Furthermore, we propose 
-            a multi-modal feature matching strategy coupled with a multi-scale Gaussian decoding model to enhance 
-            the joint refinement of multi-modal features, thereby enabling efficient multi-modal Gaussian learning. 
-            Extensive experiments on two large-scale autonomous driving datasets, Waymo and KITTI, demonstrate that 
-            our ADGaussian achieves state-of-the-art performance and exhibits superior zero-shot generalization capabilities in novel-view shifting.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--/ Abstract. -->
   </div>
-</section>
   
 
 
@@ -244,21 +218,39 @@
 
   <div class="row content-header">
     <div class="col pr-0">
-    <p>Shifting Results</p>
+      <p class="title is-4">Zero-shot large-view rendering video</p>
+      
+      <p class="subtitle is-5" style="margin-top: 0.5rem;">
+        Waymo dataset
+      </p>
+      
+      <div class="content" style="margin-top: 1rem;">
+        <p>
+          We can evaluate the robustness on large viewpoint changes by apply the leftward and rightward view shifting.
+        </p>
+      </div>
+      
+      <section class="hero teaser" style="margin: 1.5rem 0;">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <video id="teaser" autoplay muted loop playsinline width="90%" height="auto">
+              <source src="/media/research/ADGaussian/demo1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+      
+      <p class="subtitle is-5" style="margin-top: 0.5rem;">
+        KITTI dataset
+      </p>
+      
+      <div class="content" style="margin-top: 1rem;">
+        <p>
+          We can also achieve the zero-shot left2right camera rendering on the KITTI dataset. 
+          Also, we can use the ground truth right camera images provided in the KITTI dataset to evaluate the quantitative performance of view shifting.
+        </p>
+      </div>
     </div>
-  </div>
-  <br/>
-
-  <div class="container" style="text-align:center;">
-  
-    <div class="row justify-content-center mb-1">
-        
-          <img src= /media/research/ADGaussian/shift.jpg style="max-height:400pt;" class="paper-image img-fluid selected-figure drop-shadow">
-        
-    </div>
-    <br/>
-    <br/>
-  
   </div>  
 
 
@@ -289,62 +281,6 @@
       </div>
     </div>
   </section> -->
-
-  <section class="section">
-    <div class="container is-max-desktop">
-  
-      <div class="columns is-centered">
-      <!-- Zero-shot large-view rendering. -->
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3 has-text-weight-bold has-text-left">Zero-shot large-view rendering</h2>
-
-          <!-- Interpolating. -->
-          <h3 class="title is-4 has-text-weight-bold has-text-left">Waymo dataset</h3>
-          <div class="content has-text-left">
-            <p>
-              We can evaluate the robustness on large viewpoint changes by apply the leftward and rightward view shifting.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video"
-                  controls
-                  muted
-                  preload
-                  playsinline
-                  width="75%">
-              <source src="/media/research/ADGaussian/demo1.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <br/>
-          <!--/ Interpolating. -->
-
-          <!-- Re-rendering. -->
-          <h3 class="title is-4 has-text-weight-bold has-text-left">KITTI dataset</h3>
-          <div class="content has-text-left">
-            <p>
-              We can also achieve the zero-shot left2right camera rendering on the KITTI dataset. Also, we can use the ground truth right camera images provided in the KITTI dataset to evaluate the quantitative performance of view shifting.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video"
-                  controls
-                  muted
-                  preload
-                  playsinline
-                  width="75%">
-              <source src="/media/research/ADGaussian/demo2.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <!--/ Re-rendering. -->
-
-        </div>
-      </div>
-      <!--/ Zero-shot large-view rendering. -->
-    </div>
-  </section>
 
   <!-- <div class="row content-header">
     <div class="col pr-0">
