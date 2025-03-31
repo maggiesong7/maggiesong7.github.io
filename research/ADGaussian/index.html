@@ -139,7 +139,7 @@
     </div>
   </div>
 
-  <div class="row content-header">
+  <!-- <div class="row content-header">
     <div class="col pr-0">
     <p>Abstract</p>
     </div>
@@ -159,7 +159,31 @@
         our ADGaussian achieves state-of-the-art performance and exhibits superior zero-shot generalization capabilities in novel-view shifting.
       </p>
     </div>
-  </div>
+  </div> -->
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+            We present a novel approach, termed ADGaussian, for generalizable street scene reconstruction. 
+            The proposed method enables high-quality rendering from single-view input. Unlike prior Gaussian 
+            Splatting methods that primarily focus on geometry refinement, we emphasize the importance of 
+            joint optimization of image and depth features for accurate Gaussian prediction. To this end, we first 
+            incorporate sparse LiDAR depth as an additional input modality, formulating the Gaussian prediction 
+            process as a joint learning framework of visual information and geometric clue. Furthermore, we propose 
+            a multi-modal feature matching strategy coupled with a multi-scale Gaussian decoding model to enhance 
+            the joint refinement of multi-modal features, thereby enabling efficient multi-modal Gaussian learning. 
+            Extensive experiments on two large-scale autonomous driving datasets, Waymo and KITTI, demonstrate that 
+            our ADGaussian achieves state-of-the-art performance and exhibits superior zero-shot generalization capabilities in novel-view shifting.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
   
   <!-- <div class="row">
     <div class="col-1"> </div>
@@ -246,7 +270,7 @@
   </div>  
 
 
-  <div class="row content-header">
+  <!-- <div class="row content-header">
     <div class="col pr-0">
     <p>Zero-shot large-view rendering video</p>
     </div>
@@ -272,8 +296,60 @@
         </video>
       </div>
     </div>
-  </section>
+  </section> -->
 
+<!-- Zero-shot large-view rendering. -->
+<div class="columns is-centered">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Zero-shot large-view rendering</h2>
+
+    <!-- Interpolating. -->
+    <h3 class="title is-4">Interpolating states</h3>
+    <div class="content has-text-justified">
+      <p>
+        We can also animate the scene by interpolating the deformation latent codes of two input
+        frames. Use the slider here to linearly interpolate between the left frame and the right
+        frame.
+      </p>
+    </div>
+    <div class="content has-text-centered">
+      <video id="replay-video"
+             controls
+             muted
+             preload
+             playsinline
+             width="75%">
+        <source src="/media/research/ADGaussian/demo1.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+    <br/>
+    <!--/ Interpolating. -->
+
+    <!-- Re-rendering. -->
+    <h3 class="title is-4">Re-rendering the input video</h3>
+    <div class="content has-text-justified">
+      <p>
+        Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+        viewpoint such as a stabilized camera by playing back the training deformations.
+      </p>
+    </div>
+    <div class="content has-text-centered">
+      <video id="replay-video"
+             controls
+             muted
+             preload
+             playsinline
+             width="75%">
+        <source src="/media/research/ADGaussian/demo2.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+    <!--/ Re-rendering. -->
+
+  </div>
+</div>
+<!--/ Zero-shot large-view rendering. -->
 
   <!-- <div class="row content-header">
     <div class="col pr-0">
