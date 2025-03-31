@@ -37,7 +37,7 @@
 
   <div class="row mb-2">
     <div class="col">
-      <p class="full-title"> EMS: 3D Eyebrow Modeling from Single-view Images </p>
+      <p class="full-title"> ADGaussian: Generalizable Gaussian Splatting for Autonomous Driving \\with Multi-modal Inputs </p>
     </div>
   </div>
   
@@ -55,33 +55,31 @@
         
           <div class="ml-2 mr-2">
           
-            <a href="https://kevinlee09.github.io" class="plain-link">Chenghong Li</a><a class="plain-wo-link"><sup>* 1, 2</sup></a>
+            <a href="https://maggiesong7.github.io/" class="plain-link">Qi Song</a><a class="plain-wo-link"><sup>1</sup></a>
           
           </div>
         
           <div class="ml-2 mr-2">
           
-            <a class="plain-wo-link">Leyang Jin<sup>*2</sup></a>
-          
-          </div>
+            <a href="https://kevinlee09.github.io" class="plain-link">Chenghong Li</a><a class="plain-wo-link"><sup>1</sup></a>
         
 
           <div class="ml-2 mr-2">
           
-            <a href="https://paulyzheng.github.io/about/" class="plain-link">Yujian Zheng</a><a class="plain-wo-link"><sup> 1, 2</sup></a>
+            <a href="https://haotongl.github.io/" class="plain-link">Haotong Lin</a><a class="plain-wo-link"><sup>2</sup></a>
           
           </div>
 
 
           <div class="ml-2 mr-2">
           
-            <a href="https://i.cs.hku.hk/~yzyu/" class="plain-link">Yizhou Yu</a><a class="plain-wo-link"><sup>#3</sup></a>
+            <a href="https://myweb.cuhk.edu.cn/ruihuang" class="plain-link">Rui Huang</a><a class="plain-wo-link"><sup>#1</sup></a>
           
           </div>
 
           <div class="ml-2 mr-2">
           
-            <a href="https://gaplab.cuhk.edu.cn/pages/people" class="plain-link">Xiaoguang Han</a><a class="plain-wo-link"><sup>#2, 1</sup></a>
+            <a href="https://pengsida.net/" class="plain-link">Sida Peng</a><a class="plain-wo-link"><sup>#2</sup></a>
           
           </div>
         
@@ -91,13 +89,13 @@
 
   <div class="row">
     <div class="col schools-list">
-      <p>1. FNii, CUHKSZ &nbsp; &nbsp; 2. SSE, CUHKSZ &nbsp;&nbsp; 3. The University of Hong Kong </p>
+      <p>1. SSE, CUHKSZ &nbsp; &nbsp; 2. Zhejiang University </p>
     </div>
   </div>
 
   <div class="row mb-2">
     <div class="col publication-status">
-      ACM Transactions on Graphics (SIGGRAPH Asia 2023) 
+      Arxiv 
     </div>
   </div>
   <div class="row mb-3">
@@ -114,18 +112,6 @@
           <a href="/media/papers/EMS/EMS.pdf" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">pdf (12MB)</a>
         </div>
 
-        <div>
-          <a href="https://github.com/kevinlee09/EMS_dataset" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">data</a> 
-        </div>
-  
-        <div>
-          <a href="/media/papers/EMS/EMS_fast_forward.pdf" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">fast forward</a>
-        </div>
-  
-        <div>
-          <a href="/media/papers/EMS/EMS_pre.pdf" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">slides</a>
-        </div>  
-
       </div>
     </div>
   </div>
@@ -134,18 +120,18 @@
   <div class="row mb-4">
     <div class="col">
 			
-					<img src=/media/research/EMS/EMS_teaser.jpg class="img-fluid big-teaser-image drop-shadow" alt="big teaser image">
+					<img src=media/research/ADGaussian/ADGaussian_teaser.png class="img-fluid big-teaser-image drop-shadow" alt="big teaser image">
 			
 		</div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col">
       <p class="abstract">
         Nowadays, 3D heads can be easily digitalized with high-fidelity geometry and texture, like the setup used in FaceScape. In this work, we proposed EMS, a learning-based approach, which can further reconstruct 3D eyebrows from just the frontal-view image. (a) the input image. (b) the cropped eyebrow image from (a). (c) our reconstructed fiber-level 3D eyebrow model rendered with multiple views. (d) the cropped rendering of (e) for comparison with (b). (e) putting our result on the textured 3D head can further improve the realism of face digitalization.
       </p>
     </div>
-  </div>
+  </div> -->
 
   <div class="row content-header">
     <div class="col pr-0">
@@ -155,32 +141,16 @@
   <div class="row mb-4">
     <div class="col">
       <p class="abstract">
-        Eyebrows play a critical role in facial expression and appearance. Although
-        the 3D digitization of faces is well explored, less attention has been drawn
-        to 3D eyebrow modeling. In this work, we propose EMS, the first learning-based 
-        framework for single-view 3D eyebrow reconstruction. Following the methods 
-        of scalp hair reconstruction, we also represent the eyebrow as a set of 
-        fiber curves and convert the reconstruction to fibers growing problem.
-        Three modules are then carefully designed: RootFinder firstly localizes the
-        fiber root positions which indicate where to grow; OriPredictor predicts an
-        orientation field in the 3D space to guide the growing of fibers; FiberEnder is
-        designed to determine when to stop the growth of each fiber. Our OriPredictor
-        directly borrows the method used in hair reconstruction. Considering the
-        differences between hair and eyebrows, both RootFinder and FiberEnder
-        are newly proposed. Specifically, to cope with the challenge that the root
-        location is severely occluded, we formulate root localization as a density map estimation task. 
-        Given the predicted density map, a density-based clustering
-        method is further used for finding the roots. For each fiber, the growth starts
-        from the root point and moves step by step until the ending, where each step
-        is defined as an oriented line segment with a constant length according to the
-        predicted orientation field. To determine when to end, a pixel-aligned RNN
-        architecture is designed to form a binary classifier, which outputs stop or not
-        for each growing step. To support the training of all proposed networks, we
-        build the first 3D synthetic eyebrow dataset that contains 400 high-quality
-        eyebrow models manually created by artists. Extensive experiments have
-        demonstrated the effectiveness of the proposed EMS pipeline on a variety of
-        different eyebrow styles and lengths, ranging from short and sparse to long
-        bushy eyebrows.
+        We present a novel approach, termed ADGaussian, for generalizable street scene reconstruction. 
+        The proposed method enables high-quality rendering from single-view input. Unlike prior Gaussian 
+        Splatting methods that primarily focus on geometry refinement, we emphasize the importance of 
+        joint optimization of image and depth features for accurate Gaussian prediction. To this end, we first 
+        incorporate sparse LiDAR depth as an additional input modality, formulating the Gaussian prediction 
+        process as a joint learning framework of visual information and geometric clue. Furthermore, we propose 
+        a multi-modal feature matching strategy coupled with a multi-scale Gaussian decoding model to enhance 
+        the joint refinement of multi-modal features, thereby enabling efficient multi-modal Gaussian learning. 
+        Extensive experiments on two large-scale autonomous driving datasets, Waymo and KITTI, demonstrate that 
+        our ADGaussian achieves state-of-the-art performance and exhibits superior zero-shot generalization capabilities in novel-view shifting.
       </p>
     </div>
   </div>
@@ -210,11 +180,11 @@
   
     <div class="row justify-content-center mb-1">
         
-          <img src= /media/research/EMS/EMS_pipeline.jpg class="figure-img img-fluid selected-figure drop-shadow">
+          <img src= /media/research/ADGaussian/ADGaussian_pipeline.png class="figure-img img-fluid selected-figure drop-shadow">
         
     </div>
     <div class="row justify-content-center">
-        <p class="abstract"> The pipeline of eyebrow modeling from single-view images. Given a single-view image, our method reconstructs a fiber-level 3D eyebrow. We first prepare the intermediate data, then feed them into RootFinder, OriPredictor and FiberEnder to generate 3D eyebrow roots R, 3D orientation function D and ending function L. Following the eyebrow synthesis, we finally obtain the fiber-level eyebrow model. </p>
+        <p class="abstract"> Given monocular posed image with sparse depth as input, ADGaussian first extracts well-fused multi-modal features through Multi-modal Feature Matching, which contains a siamese-style encoder and a cross-attention decoder enhanced by Depth-guided positional embedding (DPE). Subsequently, the Gaussian Head and Geometry Head, augmented with Multi-scale Gaussian Decoding, are utilized to predict different Gaussian parameters. </p>
     </div>
     <br/>
     <br/>
