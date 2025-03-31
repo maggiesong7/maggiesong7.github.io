@@ -290,55 +290,61 @@
     </div>
   </section> -->
 
-<!-- Zero-shot large-view rendering. -->
-<div class="columns is-centered">
-  <div class="column is-full-width">
-    <h2 class="title is-3 has-text-weight-bold has-text-left">Zero-shot large-view rendering</h2>
+  <section class="section">
+    <div class="container is-max-desktop">
+  
+      <div class="columns is-centered">
+      <!-- Zero-shot large-view rendering. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-weight-bold has-text-left">Zero-shot large-view rendering</h2>
 
-    <!-- Interpolating. -->
-    <h3 class="title is-4 has-text-weight-bold has-text-left">Waymo dataset</h3>
-    <div class="content has-text-left">
-      <p>
-        We can evaluate the robustness on large viewpoint changes by apply the leftward and rightward view shifting.
-      </p>
-    </div>
-    <div class="content has-text-centered">
-      <video id="replay-video"
-             controls
-             muted
-             preload
-             playsinline
-             width="75%">
-        <source src="/media/research/ADGaussian/demo1.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-    <br/>
-    <!--/ Interpolating. -->
+          <!-- Interpolating. -->
+          <h3 class="title is-4 has-text-weight-bold has-text-left">Waymo dataset</h3>
+          <div class="content has-text-left">
+            <p>
+              We can evaluate the robustness on large viewpoint changes by apply the leftward and rightward view shifting.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <video id="replay-video"
+                  controls
+                  muted
+                  preload
+                  playsinline
+                  width="75%">
+              <source src="/media/research/ADGaussian/demo1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <br/>
+          <!--/ Interpolating. -->
 
-    <!-- Re-rendering. -->
-    <h3 class="title is-4 has-text-weight-bold has-text-left">KITTI dataset</h3>
-    <div class="content has-text-left">
-      <p>
-        We can also achieve the zero-shot left2right camera rendering on the KITTI dataset. Also, we can use the ground truth right camera images provided in the KITTI dataset to evaluate the quantitative performance of view shifting.
-      </p>
-    </div>
-    <div class="content has-text-centered">
-      <video id="replay-video"
-             controls
-             muted
-             preload
-             playsinline
-             width="75%">
-        <source src="/media/research/ADGaussian/demo2.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-    <!--/ Re-rendering. -->
+          <!-- Re-rendering. -->
+          <h3 class="title is-4 has-text-weight-bold has-text-left">KITTI dataset</h3>
+          <div class="content has-text-left">
+            <p>
+              We can also achieve the zero-shot left2right camera rendering on the KITTI dataset. Also, we can use the ground truth right camera images provided in the KITTI dataset to evaluate the quantitative performance of view shifting.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <video id="replay-video"
+                  controls
+                  muted
+                  preload
+                  playsinline
+                  width="75%">
+              <source src="/media/research/ADGaussian/demo2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <!--/ Re-rendering. -->
 
-  </div>
-</div>
-<!--/ Zero-shot large-view rendering. -->
+        </div>
+      </div>
+      <!--/ Zero-shot large-view rendering. -->
+    </div>
+  </section>
 
   <!-- <div class="row content-header">
     <div class="col pr-0">
