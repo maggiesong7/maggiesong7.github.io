@@ -129,14 +129,17 @@
 
   <section class="hero teaser">
     <div class="container is-max-desktop">
-      <div class="hero-body" style="text-align: center;"> <img id="teaser-img" 
+      <div class="hero-body" style="text-align: center;"> 
+        
+        <img id="teaser-img" 
             src="/media/research/Envision4D/teaser.png" 
             alt="Envision4D Teaser" 
             style="width: 90%; height: auto; display: block; margin: 0 auto;">
         
-        <h2 class="subtitle has-text-centered" style="font-size: 1.15rem; margin-top: 15px;">
+        <p style="font-size: 0.95rem; line-height: 1.5; color: #666666; text-align: justify; margin: 15px auto 0 auto; width: 90%;">
           Envision4D reconstructs 4D Gaussians together with future poses in a self-supervised and feed-forward manner, enabling efficient dynamic scene extrapolation.
-        </h2>
+        </p>
+
       </div>
     </div>
   </section>
@@ -200,13 +203,7 @@
     
     <div class="row justify-content-center">
       <p class="abstract">
-        Unlike interpolation where motion errors are typically constrained between observations, extrapolation is highly ill-posed, with errors accumulating sharply as the number of extrapolated future frames increases.
-      </p>
-    </div>
-    
-    <div class="row justify-content-center">
-      <p class="abstract">
-        As analyzed in the table below, our method yields stable high-fidelity rendering across extended extrapolation horizons. Notably, our long-term prediction (\(T_f=6\)) yields even higher PSNR and LPIPS quality than STORM's short-term output (\(T_f=2\)), demonstrating exceptional robustness against temporal error accumulation. Additionally, extending context frames further enhances extrapolation capability by providing richer dynamic cues.
+        Unlike interpolation where motion errors are typically constrained between observations, extrapolation is highly ill-posed, with errors accumulating sharply as the number of extrapolated future frames increases. As analyzed in the table below, our method yields stable high-fidelity rendering across extended extrapolation horizons. Notably, our long-term prediction (<em>T<sub>f</sub></em> = 6) yields even higher PSNR and LPIPS quality than STORM's short-term output (<em>T<sub>f</sub></em> = 2), demonstrating exceptional robustness against temporal error accumulation. Additionally, extending context frames further enhances extrapolation capability by providing richer dynamic cues.
       </p>
     </div>
     <br/>
@@ -214,18 +211,18 @@
     <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-10">
         <p id="tab-fut" style="font-size: 0.95rem; line-height: 1.5; color: #666666; text-align: justify; margin-bottom: 12px;">
-          <strong>Quantitative comparison under varying context ($T_c$) and future ($T_f$) frames.</strong> Notably, our method at $T_f=6$ even achieves competitive performance compared to STORM at $T_f=2$.
+          <strong>Quantitative comparison under varying context (<em>T<sub>c</sub></em>) and future (<em>T<sub>f</sub></em>) frames.</strong> Notably, our method at <em>T<sub>f</sub></em> = 6 even achieves competitive performance compared to STORM at <em>T<sub>f</sub></em> = 2.
         </p>
 
         <div class="table-responsive shadow-sm p-3 bg-white rounded" style="border: 1px solid #e1e4e8;">
           <table class="table table-hover align-middle" style="font-size: 0.95rem; color: #222222; margin-bottom: 0;">
             <thead class="table-light" style="border-top: 2px solid #333; border-bottom: 2px solid #333;">
               <tr>
-                <th rowspan="2" class="align-middle">\(T_c\)</th>
-                <th rowspan="2" class="align-middle">\(T_f\)</th>
-                <th colspan="2" style="border-bottom: 1px solid #ddd;">PSNR \(\uparrow\)</th>
-                <th colspan="2" style="border-bottom: 1px solid #ddd;">SSIM \(\uparrow\)</th>
-                <th colspan="2" style="border-bottom: 1px solid #ddd;">LPIPS \(\downarrow\)</th>
+                <th rowspan="2" class="align-middle" style="font-family: 'Times New Roman', serif;"><em>T<sub>c</sub></em></th>
+                <th rowspan="2" class="align-middle" style="font-family: 'Times New Roman', serif;"><em>T<sub>f</sub></em></th>
+                <th colspan="2" style="border-bottom: 1px solid #ddd;">PSNR &uarr;</th>
+                <th colspan="2" style="border-bottom: 1px solid #ddd;">SSIM &uarr;</th>
+                <th colspan="2" style="border-bottom: 1px solid #ddd;">LPIPS &darr;</th>
               </tr>
               <tr>
                 <th>STORM</th>
@@ -306,8 +303,7 @@
   <div class="container" style="text-align:center;">
     
     <div class="row justify-content-center">
-        <p class="abstract"> The concept of novel-view shifting involves generating images from significantly varied perspectives compared to the original viewpoints present in the training data. 
-          We can evaluate the robustness on large viewpoint changes by applying the leftward and rightward view shifting. </p>
+        <p class="abstract"> Here are some demo videos. As can be seen, Envision4D achieves robust future extrapolation in dynamic scenarios, successfully breaking free from the constraints of extra explicit guidance and restrictive future priors.  </p>
     </div>
     
       <div class="container is-max-desktop">
