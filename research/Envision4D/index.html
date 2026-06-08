@@ -186,6 +186,9 @@
   
   </div>  
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/dist/mathjax.umd.js"></script>
+
   <div class="row content-header">
     <div class="col pr-0">
       <p>Comparison on Long-term Extrapolation</p>
@@ -196,26 +199,26 @@
   <div class="container" style="text-align:center;">
     
     <div class="row justify-content-center">
-      <div class="col-12 col-md-10">
-        <div class="analysis-text text-justify mb-4" style="font-size: 1.05rem; line-height: 1.6; color: #222222; text-align: justify; text-indent: 2em;">
-          <p>
-            Unlike interpolation where motion errors are typically constrained between observations, extrapolation is highly ill-posed, with errors accumulating sharply as the number of extrapolated future frames increases.
-          </p>
-          <p>
-            As analyzed in <a href="#tab-fut" style="text-decoration: none; color: #0056b3; font-weight: bold;">Tab. 1</a>, our method yields stable high-fidelity rendering across extended extrapolation horizons. Notably, our long-term prediction (\(T_f=6\)) yields even higher PSNR and LPIPS quality than STORM's short-term output (\(T_f=2\)), demonstrating exceptional robustness against temporal error accumulation. Additionally, extending context frames further enhances extrapolation capability by providing richer dynamic cues.
-          </p>
-        </div>
-      </div>
+      <p class="abstract">
+        Unlike interpolation where motion errors are typically constrained between observations, extrapolation is highly ill-posed, with errors accumulating sharply as the number of extrapolated future frames increases.
+      </p>
     </div>
+    
+    <div class="row justify-content-center">
+      <p class="abstract">
+        As analyzed in the table below, our method yields stable high-fidelity rendering across extended extrapolation horizons. Notably, our long-term prediction (\(T_f=6\)) yields even higher PSNR and LPIPS quality than STORM's short-term output (\(T_f=2\)), demonstrating exceptional robustness against temporal error accumulation. Additionally, extending context frames further enhances extrapolation capability by providing richer dynamic cues.
+      </p>
+    </div>
+    <br/>
 
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-10">
-        <p id="tab-fut" class="text-justify mb-2" style="font-size: 1.05rem; line-height: 1.5; color: #333333; text-align: justify;">
-          <strong>Table 1. Quantitative comparison under varying context ($T_c$) and future ($T_f$) frames.</strong> Notably, our method at $T_f=6$ even achieves competitive performance compared to STORM at $T_f=2$.
+        <p id="tab-fut" style="font-size: 0.95rem; line-height: 1.5; color: #666666; text-align: justify; margin-bottom: 12px;">
+          <strong>Quantitative comparison under varying context ($T_c$) and future ($T_f$) frames.</strong> Notably, our method at $T_f=6$ even achieves competitive performance compared to STORM at $T_f=2$.
         </p>
 
-        <div class="table-responsive shadow-sm p-3 mb-2 bg-white rounded" style="border: 1px solid #e1e4e8;">
-          <table class="table table-hover align-middle" style="font-size: 1rem; color: #222222; margin-bottom: 0;">
+        <div class="table-responsive shadow-sm p-3 bg-white rounded" style="border: 1px solid #e1e4e8;">
+          <table class="table table-hover align-middle" style="font-size: 0.95rem; color: #222222; margin-bottom: 0;">
             <thead class="table-light" style="border-top: 2px solid #333; border-bottom: 2px solid #333;">
               <tr>
                 <th rowspan="2" class="align-middle">\(T_c\)</th>
@@ -279,17 +282,19 @@
         </div>
       </div>
     </div>
+    <br/>
 
     <div class="row justify-content-center mb-1">
       <div class="col-12 col-md-10">
         <img src="/media/research/Envision4D/compare26.png" style="max-height:750pt; width: 100%; height: auto;" class="figure-img img-fluid selected-figure drop-shadow">
-        <p class="text-justify mt-3" style="font-size: 1.05rem; line-height: 1.5; color: #333333; text-align: justify;">
+        
+        <p style="font-size: 0.95rem; line-height: 1.5; color: #666666; text-align: justify; margin-top: 12px;">
           <strong>Qualitative comparisons of long-term future extrapolation.</strong> The blue and orange dots denote the input observation frames and extrapolated future frames, respectively. The challenging dynamic objects are highlighted in red boxes across the input frames. It is noted that our model achieves significantly more stable and temporally consistent future extrapolation, even without extra motion guidance and ground-truth future poses.
         </p>
       </div>
     </div>
     
-  </div> 
+  </div>
 
   <div class="row content-header">
     <div class="col pr-0">
