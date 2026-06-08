@@ -1,0 +1,6 @@
+@article{song2025adgaussian,
+  title={Adgaussian: Generalizable gaussian splatting for autonomous driving with multi-modal inputs},
+  author={Song, Qi and Li, Chenghong and Lin, Haotong and Peng, Sida and Huang, Rui},
+  journal={arXiv preprint arXiv:2504.00437},
+  year={2025}
+}
