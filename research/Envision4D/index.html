@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+   
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>"> -->
+  <link rel="icon" type="image/png" href="/icon/icon.jpg">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Alegreya+SC&family=Lora:wght@400&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+
+
+
+<div class="row pt-1 m-1">
+              
+
+<div class="container" style="text-align:center;">
+
+
+
+  <div class="row mb-2">
+    <div class="col">
+      <p class="full-title"> Envision4D: Envisioning Visual Futures via Feed-forward 4D Gaussian Splatting for Autonomous Driving </p>
+    </div>
+  </div>
+  
+  <!-- <div class="row mb-4">
+    <div class="col">
+			
+					<img src=/media/papers/vector-heat-method/big_teaser.jpg class="img-fluid big-teaser-image drop-shadow" alt="big teaser image">
+			
+		</div>
+  </div> -->
+  
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center flex-wrap authors-list">
+        
+        <div class="ml-2 mr-2">
+          <a href="https://maggiesong7.github.io/" class="plain-link">Qi Song</a><a class="plain-wo-link"><sup>1</sup></a>
+        </div>
+        
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Yifei He</span><a class="plain-wo-link"><sup>1</sup></a>
+        </div>
+        
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Chi Zhang</span><a class="plain-wo-link"><sup>2</sup></a>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Zheng Fu</span><a class="plain-wo-link"><sup>1</sup></a>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Xuhe Zhao</span><a class="plain-wo-link"><sup>1</sup></a>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Mengmeng Yang</span><a class="plain-wo-link"><sup>1</sup></a>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Kun Jiang</span><a class="plain-wo-link"><sup>1</sup></a>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Rui Huang</span><a class="plain-wo-link"><sup>2†</sup></a>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <span class="plain-wo-link">Diange Yang</span><a class="plain-wo-link"><sup>1†</sup></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col schools-list">
+      <p>1. Tsinghua University &nbsp; &nbsp; 2. The Chinese University of Hongkong, Shenzhen </p>
+    </div>
+  </div>
+
+  <!-- <div class="row mb-2">
+    <div class="col publication-status">
+      arxiv 
+    </div>
+  </div> -->
+  <div class="row mb-3">
+    <div class="col">
+      
+    </div>
+  </div>
+	
+  <div class="row mb-3">
+    <div class="col">
+      
+      <div class="d-flex justify-content-center flex-wrap">
+     
+        <div>
+          <a href="https://arxiv.org/pdf/2504.00437" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">paper</a>
+        </div>
+     
+        <div>
+          <a href="https://github.com/maggiesong7/Envision4D" class="btn-lg big-badge-button ml-2 mr-2 mb-2" role="button">code</a>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body" style="text-align: center;"> <img id="teaser-img" 
+            src="/media/research/Envision4D/teaser.png" 
+            alt="Envision4D Teaser" 
+            style="width: 90%; height: auto; display: block; margin: 0 auto;">
+        
+        <h2 class="subtitle has-text-centered" style="font-size: 1.15rem; margin-top: 15px;">
+          Envision4D reconstructs 4D Gaussians together with future poses in a self-supervised and feed-forward manner, enabling efficient dynamic scene extrapolation.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <br/>
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Abstract</p>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <p class="abstract">
+        Forecasting the future evolution of dynamic scenes is crucial in autonomous driving. However, existing feed-forward paradigms are 
+        primarily designed for interpolation. When extended to future extrapolation, they suffer from ghosting artifacts under large displacements 
+        and are constrained by simplified motion assumptions or strict future priors. To overcome these challenges, we propose Envision4D, 
+        a fully self-supervised feed-forward framework for pose-free future extrapolation. Specifically, we introduce a Future Pose Prediction 
+        module that infers future camera parameters via an iterative denoising process. Furthermore, to capture non-linear dynamics, we 
+        propose In-layer Temporal Attention and employ Conditioned Motion Lifting, which transforms the highly uncertain extrapolation process 
+        into robust relational mappings. Finally, a Progressive Training Strategy is utilized to stabilize unsupervised motion learning 
+        against error accumulation. Extensive experiments demonstrate that Envision4D achieves state-of-the-art performance, significantly 
+        outperforming existing methods in future view synthesis.
+      </p>
+    </div>
+  </div>
+  
+
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Overview</p>
+    </div>
+  </div>
+  <br/>
+      
+  <div class="container" style="text-align:center;">
+  
+    <div class="row justify-content-center mb-1">
+        
+          <img src= /media/research/Envision4D/pipeline.png class="figure-img img-fluid selected-figure drop-shadow">
+        
+    </div>
+    <div class="row justify-content-center">
+        <p class="abstract"> Given a sequence of context images, Envision4D predicts 4D Gaussians and all target camera poses. The motion awareness of feature tokens is first enhanced via In-layer Temporal Attention. Subsequently, Joint Pose-Motion Prediction is applied to enable future pose estimation through iterative denoising, alongside non-linear motion generation via conditioned motion lifting. The generated tokens are then decoded to render novel future views. </p>
+    </div>
+    <br/>
+  
+  </div>  
+
+  <div class="row content-header">
+    <div class="col pr-0">
+      <p>Comparison on Long-term Extrapolation</p>
+    </div>
+  </div>
+  <br/>
+
+  <div class="container" style="text-align:center;">
+    
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+        <div class="analysis-text text-justify mb-4" style="font-size: 1.05rem; line-height: 1.6; color: #222222; text-align: justify; text-indent: 2em;">
+          <p>
+            Unlike interpolation where motion errors are typically constrained between observations, extrapolation is highly ill-posed, with errors accumulating sharply as the number of extrapolated future frames increases.
+          </p>
+          <p>
+            As analyzed in <a href="#tab-fut" style="text-decoration: none; color: #0056b3; font-weight: bold;">Tab. 1</a>, our method yields stable high-fidelity rendering across extended extrapolation horizons. Notably, our long-term prediction (\(T_f=6\)) yields even higher PSNR and LPIPS quality than STORM's short-term output (\(T_f=2\)), demonstrating exceptional robustness against temporal error accumulation. Additionally, extending context frames further enhances extrapolation capability by providing richer dynamic cues.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-md-10">
+        <p id="tab-fut" class="text-justify mb-2" style="font-size: 1.05rem; line-height: 1.5; color: #333333; text-align: justify;">
+          <strong>Table 1. Quantitative comparison under varying context ($T_c$) and future ($T_f$) frames.</strong> Notably, our method at $T_f=6$ even achieves competitive performance compared to STORM at $T_f=2$.
+        </p>
+
+        <div class="table-responsive shadow-sm p-3 mb-2 bg-white rounded" style="border: 1px solid #e1e4e8;">
+          <table class="table table-hover align-middle" style="font-size: 1rem; color: #222222; margin-bottom: 0;">
+            <thead class="table-light" style="border-top: 2px solid #333; border-bottom: 2px solid #333;">
+              <tr>
+                <th rowspan="2" class="align-middle">\(T_c\)</th>
+                <th rowspan="2" class="align-middle">\(T_f\)</th>
+                <th colspan="2" style="border-bottom: 1px solid #ddd;">PSNR \(\uparrow\)</th>
+                <th colspan="2" style="border-bottom: 1px solid #ddd;">SSIM \(\uparrow\)</th>
+                <th colspan="2" style="border-bottom: 1px solid #ddd;">LPIPS \(\downarrow\)</th>
+              </tr>
+              <tr>
+                <th>STORM</th>
+                <th>Ours</th>
+                <th>STORM</th>
+                <th>Ours</th>
+                <th>STORM</th>
+                <th>Ours</th>
+              </tr>
+            </thead>
+            <tbody style="border-bottom: 2px solid #333;">
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>26.19</td>
+                <td><strong>27.81</strong></td>
+                <td>0.798</td>
+                <td><strong>0.816</strong></td>
+                <td>0.242</td>
+                <td><strong>0.159</strong></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>4</td>
+                <td>25.55</td>
+                <td><strong>26.87</strong></td>
+                <td>0.773</td>
+                <td><strong>0.790</strong></td>
+                <td>0.263</td>
+                <td><strong>0.170</strong></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>6</td>
+                <td>24.41</td>
+                <td><strong>26.21</strong></td>
+                <td>0.753</td>
+                <td><strong>0.771</strong></td>
+                <td>0.346</td>
+                <td><strong>0.192</strong></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>6</td>
+                <td>24.62</td>
+                <td><strong>26.46</strong></td>
+                <td>0.752</td>
+                <td><strong>0.782</strong></td>
+                <td>0.302</td>
+                <td><strong>0.187</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mb-1">
+      <div class="col-12 col-md-10">
+        <img src="/media/research/Envision4D/compare26.png" style="max-height:750pt; width: 100%; height: auto;" class="figure-img img-fluid selected-figure drop-shadow">
+        <p class="text-justify mt-3" style="font-size: 1.05rem; line-height: 1.5; color: #333333; text-align: justify;">
+          <strong>Qualitative comparisons of long-term future extrapolation.</strong> The blue and orange dots denote the input observation frames and extrapolated future frames, respectively. The challenging dynamic objects are highlighted in red boxes across the input frames. It is noted that our model achieves significantly more stable and temporally consistent future extrapolation, even without extra motion guidance and ground-truth future poses.
+        </p>
+      </div>
+    </div>
+    
+  </div> 
+
+  <div class="row content-header">
+    <div class="col pr-0">
+    <p>Demo Video</p>
+    </div>
+  </div>
+  <br/>
+      
+  <div class="container" style="text-align:center;">
+    
+    <div class="row justify-content-center">
+        <p class="abstract"> The concept of novel-view shifting involves generating images from significantly varied perspectives compared to the original viewpoints present in the training data. 
+          We can evaluate the robustness on large viewpoint changes by applying the leftward and rightward view shifting. </p>
+    </div>
+    
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video id="teaser" autoplay muted loop playsinline width="90%" height="auto">
+            <source src="/media/research/Envision4D/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+  
+  </div> 
+
+
+  <!-- <div class="row content-header">
+    <div class="col pr-0">
+    <p>Zero-shot large-view rendering video</p>
+    </div>
+  </div>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline width="90%" height="auto">
+          <source src="/media/research/ADGaussian/demo1.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline width="90%" height="auto">
+          <source src="/media/research/ADGaussian/demo2.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <div class="row content-header">
+    <div class="col pr-0">
+    <p>Reference</p>
+    </div>
+  </div>
+
+
+  <div class="bibtex">
+    <pre> <code class="bibtex-code">
+      @article{li2023ems,
+        title={EMS: 3D Eyebrow Modeling from Single-view Images},
+        author={Li, Chenghong and Jin, Leyang and Zheng, Yujian and Yu, Yizhou and Han, Xiaoguang},
+        journal={ACM Transactions on Graphics (TOG)},
+        volume={42},
+        number={6},
+        pages={1--19},
+        year={2023},
+        publisher={ACM New York, NY, USA}
+      }
+    </code></pre>
+  </div> -->
+  
+
+
+</div>
+
+<div class="row">
+  <div class="col">
+    
+  </div>
+</div>
+
+
+            </div>
+          </div>
+          <div class="col-xl-1"></div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+    
+  <footer>
+
+
+<div class="row">
+<div class="col-12">
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+
+</footer>
+
+
+</html>
