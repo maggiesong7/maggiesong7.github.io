@@ -1,0 +1,7 @@
+@article{zhang2024hybrimap,
+  title={HybriMap: Hybrid clues utilization for effective vectorized HD map construction},
+  author={Zhang, Chi and Song, Qi and Li, Feifei and Chen, Yongquan and Huang, Rui},
+  journal={arXiv e-prints},
+  pages={arXiv--2404},
+  year={2024}
+}
